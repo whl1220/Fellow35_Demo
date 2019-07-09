@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>行级元素&块级元素</title>
+
+    <style>
+        /* 
+            块级元素：
+                单个元素占一行
+                可以设置宽高
+                display:block
+            行级元素：
+                多个元素占一行
+                不可以设置宽高,根据内容展开
+                display:inline
+            行级块元素：
+                多个元素占一行
+                可以设置宽高
+                display:inline-block     
+        */
+        div{
+            /* 隐藏展示 */
+            /* display: none； */
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+            /*
+            块级元素水平居中
+            margin-left=margin-right
+            */
+            margin: 0 auto；
+        }
+        span{
+            width: 50px;
+            height: 50px;
+            background-color: red; 
+        }
+        
+        image{
+            width:auto;
+            height: auto;
+
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 块级元素 -->
+    <div>123456789-</div>
+    <!-- 行级元素 -->
+    <span>123456789</span>
+    <!-- 行级块元素 -->
+    <img src="../image/德约科维奇.jpg" alt="">
+
+</body>
+</html>

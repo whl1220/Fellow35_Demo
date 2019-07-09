@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css_定位</title>
+
+    <style>
+        body{
+            height:4000px;
+        }
+        /* position 定位
+            relative 相对定位 相对当前位置  定位后空间不释放
+            absolute 绝对定位 定位后空间释放 相对最近的已定位的祖先元素进行定位
+                top left bottom right
+            fixed  固定定位 相对当前浏览器body
+        */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #content{
+            width: 100px;
+            height: 100px;
+            background-color:aqua;
+
+            position: relative;
+        }
+        #container{
+            width: 100px;
+            height: 100px;
+            background-color:rgba(255, 0, 255, 0.5);
+        
+            /*
+            css按照html->body中声明的先后顺序进行渲染
+            z-index 层级 调整上下覆盖的情况 
+             */
+            z-index: 1;
+        }
+        #floatbutton{
+            width: 60px;
+            height: 60px;
+            background: gray;
+            opacity: 0.5;
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+        }
+        #btn{
+            color: blue;
+            margin: 0 auto;
+            size: 10px;
+            text-decoration: none;
+        }
+        
+
+
+    
+    </style>
+
+</head>
+<body>
+    <div id="content"></div>
+    <div id="container"></div>
+    <div id="floatbutton">
+        <a id="btn" href="#">返回顶部</a>
+    </div>
+
+</body>
+</html>

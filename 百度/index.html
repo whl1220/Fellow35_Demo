@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Baidu</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: underline;
+            color: #999;
+        }
+        .clear::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        /* #top{
+            border-bottom: 1px solid;
+        } */
+        #top{
+            position: relative;
+            z-index: 101;
+            height: 100%;
+        }
+        #top>#right{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 13px;
+        }
+        #navigation>li{
+            list-style-type: none;
+            float: left;
+        }
+        #navigation>li>a{
+            margin:auto 10px; 
+            color: black;   
+        }
+        ul>button{
+            color: #ffffff;
+            width: 86px;
+            line-height: 32px;
+            background: blue;
+            border:none;
+        }
+
+        #center{
+            text-align: center;
+        }
+        #research{
+            width: 300px;
+            height: 50px;
+            /* position: absolute;
+            left: 50%; */
+            margin: 0 auto;
+            text-align: center;
+        }
+        #research>input{
+            float: left;
+
+        }
+        #research>button{
+            float: left;
+            background: blue;
+            color: #ffffff;
+            border: none;
+        }
+        #qr{
+            position: absolute;
+            bottom: 132px;
+            width: 100%;
+            height: auto;
+            text-align: center;
+        }
+        #qr span{
+            color: #999;
+            /* font-size: 12px; */
+        }
+        #icon{
+            width: 106px;
+            height: 106px;
+            margin: 0 auto;
+            padding: 5px;
+            background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/qrcode/zbios_09b6296.png) 0 0 no-repeat;
+        }
+        #bottom{
+            width: 100%;
+            text-align: center;
+            /* 如果没有设置宽高，div根据内容自适应展开
+                解决办法1：设置宽度100%，与父级元素相同
+                解决办法2：
+                position：absolute;
+                left:50%;
+                margin-left:-50%;
+            */ 
+            position: absolute;
+            bottom: 30px;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+    <!--导航栏  -->
+    <div id="top">
+        <div id="right">
+            <ul id="navigation" class="clearfix">
+                <li><a href="#">新闻</a></li>
+                <li><a href="#">hao123</a></li>
+                <li><a href="#">地图</a></li>
+                <li><a href="#">视频</a></li>
+                <li><a href="#">贴吧</a></li>
+                <li><a href="#">学术</a></li>
+                <li><a href="#">登录</a></li>
+                <li><a href="#">设置</a></li>
+                <button>更多产品</button>   
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- 主体 -->
+    <div id="center">  
+         <!--页面logo  -->
+        <img src="https://www.baidu.com/img/bd_logo1.png?where=super" alt="#">
+        <!-- 搜索框 -->
+        <div id="research" class="clearfix">
+            <input type="text" id="content">
+            <button>百度一下</button>
+        </div>  
+    </div>
+
+    <!-- 二维码 -->
+    <div id="qr" class="clearfix">
+        <div id="icon"></div>
+        <p>下载百度APP</p>
+        <p>
+            <span>有事搜一搜</span>
+            <span>没事看一看</span>
+        </p>
+    </div>
+    <!-- 底部链接 -->
+    <div id="bottom">
+        
+        <p>
+            <span>
+                <a href="#">把百度设为首页</a>
+                <a href="#">关于百度</a>
+                <a href="#">About Baidu</a>
+                <a href="">百度推广</a>
+            </span><br>
+            <a href="#">设为首页</a><span>©2019&nbsp;Baidu&nbsp;</span>
+            <a href="#">使用百度前必读</a>
+            <a href="#">意见反馈</a>
+            <span>京ICP证030173号&nbsp;</span>
+            <img width="13" height="16" src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/copy_rignt_24.png">
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001" target="_blank">
+                <i></i>京公网安备11000002000001号
+            </a>
+        </p>
+    </div>
+
+    
+
+</body>
+</html>

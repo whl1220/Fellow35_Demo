@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css_链接</title>
+
+    <style>
+        /* 链接标签a的四种属性
+            link(默认)-->a:link{}=a{}
+            visited
+            hover
+            active
+            属性设置按上面的排序
+        */
+        /* 未被访问过时的样式，与浏览模式有关 */
+        a:link{
+            color: blue；
+        }
+        /* 访问过的样式 */
+        a:visited{
+            color: greenyellow；
+        }
+        /* 鼠标划入 */
+        a:hover{
+            color: red；
+        }
+        /* 点击时的样式 */
+        a:active{
+            color: aqua；
+        }
+        /* a标签的优先级最高，父级元素div不能覆盖 */
+        div{
+            color: greenyellow;
+        }
+    
+    </style>
+
+</head>
+<body>
+    <div>
+        0321-
+        <p>89746565</p>
+        <a href="#">链接</a>
+    </div>
+
+
+</body>
+</html>

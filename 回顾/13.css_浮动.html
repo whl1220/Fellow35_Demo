@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>浮动</title>
+
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        /* div{
+            width: 100px;
+            height: 100px;
+        } */
+        #warpper3{
+            background: yellowgreen;
+        /* 浮动 float
+            left right
+            浮动后空间会释放
+        */
+            float: left;
+        }
+        #warpper1{
+            background: red;
+            float: left;
+
+        }
+        #warpper2{
+            background: blue;
+            float: left;
+
+        }
+        /* 元素浮动后的塌陷问题
+            父元素设置溢出隐藏(要求不高时) overflow：hidden；
+            给父元素设置高度
+            给父元素新增空的子元素（最后一个）清除浮动  -->clearfix新增伪元素
+        */
+        #inner{
+            /* 清除浮动 left right both */
+            clear: both；
+        }
+
+        /* ::伪元素 */
+        /* .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        } */
+        #child1{
+            width: 100px;
+            height: 100px;
+            background:blue;
+            float: left;
+
+        }
+        #child2{
+            width: 100px;
+            height: 100px;
+            background: orange;
+            /* float: left; */
+        }
+        
+    
+    </style>
+
+</head>
+<body>
+    <div class="clearfix">
+        <div id="child1"></div>
+        <div id="child2"></div>
+    </div>
+
+<!-- 
+    <div id="warpper1">warpper1</div>
+    <div id="warpper2">warpper2</div>
+    <div id="warpper3">warpper3</div>
+    <span>1234</span> -->
+
+</body>
+</html>

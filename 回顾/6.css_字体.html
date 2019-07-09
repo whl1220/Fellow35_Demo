@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css_字体</title>
+
+    <style>
+        p{
+            /* 字体样式：
+                字体名词是多个单词，加引号
+                从左到右，支持哪个就展示哪种 
+            */
+            font-family: 'Times New Roman', Times, serif, Times, serif;
+            /* 字体大小 
+                浏览器默认大小16px;
+                支持的最小12px；
+            */
+            font-size:20px；
+            /* 字体粗细 
+                100~900
+                bold ->700
+                bolder ->更粗 要有比较的
+            */
+            font-weight：400px;
+            /* 字体风格 
+                italic斜体
+                normal正常
+                oblique文本倾斜展示
+            */
+            font-style: normal;
+        }
+        p>span{
+            font-weight: bold;
+            font-style: italic;
+
+        }
+        .dec{
+            font-weight: bolder;
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+    
+    <p>天猫，中国线上购物的地标网站，亚洲超大的综合性购物平台，拥有10万多品牌商家。每日发布大量国内外商品！正品网购，上天猫！天猫千万大牌正品,品类全，一站购，支付安全，退换无忧！理想生活上天猫!</p>
+    <p>天猫,<span>中国线上购物的地标网站</span>，亚洲超大的综合性购物平台，<span class="dec">拥有10万多品牌商家。</span> 每日发布大量国内外商品！正品网购，上天猫！天猫千万大牌正品,品类全，一站购，支付安全，退换无忧！理想生活上天猫!</p>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css_选择器</title>
+    <style>
+    /* 选择器｛｝ */
+    /* 标签选择器 标签名称 */
+    div{
+        width: 100px;
+        height: 100px;
+        background: greenyellow;
+    }
+    a{
+        /* 文本色 */
+        color: blue;
+    }
+    /* id选择器 #id名称 */
+    #content{
+        width: 200px;
+        height: 200px;
+        background: red;
+    }
+    /* 类选择器  .类名 */
+    .inner{
+        color: greenyellow;
+    }
+    /* 子代选择器 */
+    ul>li{
+        color:hotpink;
+    }
+    #div1>span{
+        color: hotpink;
+    }
+
+    /* 后代选择器 
+       选中后代中所有符合条件的元素
+    */
+    #div1 span{
+        color: red;
+    }
+    /* 伪类选择器 */
+    a{
+        color: blue;
+
+    }
+    a:hover{
+        color: red;
+    }
+
+    </style>
+
+</head>
+<body>
+    <!-- 标签 -->
+    <div>111</div>
+    <!-- id -->
+    <div id="content">ABCDEFG</div>
+    <!-- 类/class -->
+    <p class="inner">ascgdgekjiuehi</p>
+    <!-- 子代 -->
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    <!-- 后代 -->
+    <div id="div1">
+        <span>span1</span>
+        <p>
+            <span>span2</span>
+        </p>
+    </div>
+    <!-- 鼠标滑入伪类选择器 -->
+    <a href="#">百度</a>
+</body>
+</html>

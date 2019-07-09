@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>外边距合并</title>
+
+    <style>
+        *{
+            margin: 0;
+
+        }
+        #wrapper{
+
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            margin-bottom: 20px;
+        }
+        #content{
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+            margin-top: 20px;
+
+        }
+
+        #container{
+
+            width:100px;
+            height: 100px;
+            background-color: green;
+            margin-top: 20px;
+
+            /* 溢出隐藏 */
+            /* overflow: hidden； */
+            /* 绝对定位 */
+            /* position: absolute; */
+            /* 浮动 */
+            /* float: left; */
+            /* 隐藏边框  不推荐使用*/
+            border: 5px solid transparent;
+
+        }
+        #inner{
+            width:50px;
+            height: 50px;
+            background-color: red;
+            margin-top: 20px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <!-- 
+        外边距合并
+        1.并列关系
+            只给某一个元素设置外边距
+        2.嵌套关系
+            给父元素设置溢出隐藏overflow
+            给父元素或者子元素设置绝对定位
+            给父元素或子元素设置浮动
+            给父元素设置透明边框（）
+     -->
+    
+    <div id="wrapper"></div>
+    <div id="content"></div>
+    <div id="container">
+        <div id="inner"></div>
+    </div>
+</body>
+</html>
