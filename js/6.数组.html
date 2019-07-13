@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数组</title>
+</head>
+<body>
+    
+
+    <script>
+        var arr1 = [3];
+        var arr2 = [1,2,3];
+        var arr3 = new Array(4);
+        var arr4 = new Array(4,2,5,3,1,6);
+        console.log(arr1,arr2,arr3,arr4);
+        console.log(arr1.length,arr2.length,arr3.length,arr4.length);
+
+        for(var i=0;i<arr4.length;i++){
+            alert(arr4[i]);
+        }
+        // concat() 拼接两个数组，返回新的数组，并且不改变原来的数组
+        var arr=arr1.concat(arr2);
+
+        // push 在数组末尾添加元素 返回新的数组长度
+        // pop 删除数组末尾元素并将其返回
+        var len=arr1.push(4);
+        console.log(arr1);
+        console.log('len:',len);
+        console.log('----');
+        var num_del=arr1.pop();
+        console.log(arr1);
+        console.log('num_del',num_del);
+        console.log('----');  
+        //shiift 删除数组的第一个元素并将其值返回  
+        //unshift 在数组的开头添加元素，并返回新的数组长度
+
+        //.slice(start,end) 截取数组中选定下标的元素形成新的数组    负数从尾部开始计数  不改变原始数组
+        arr=arr4.slice(3);//arr4[3]~arr4[length-1]
+        console.log('new arr',arr);
+        arr=arr4.slice(2,4);//arr4[2]~arr4[3]
+        console.log('new arr:',arr);
+
+        //splice(index,del_num,item_replace1,item_replace2,item_replace3,...)
+        //从指定下标index开始，删除del_num个元素，同时将替换的元素在该位置插入 返回删除的元素构成的数组 会改变原始数组
+        //index,del_num不能为空，替换元素可以没有
+        //如果del_num =0
+        arr=arr4.splice(1,2,99,88);
+        console.log('arr_splice:S',arr);
+
+
+        // .reverse() 颠倒数组顺序 改变原始数组
+
+
+        //.sort(func_sort_rule) 将数组按照func_sort_rule进行排序,如果没有使用参数，默认按照字典序排列
+
+
+
+
+        //数组  引用数据类型    在栈内存放的是数组名(即地址)    指向堆内的一块存放数据的内存
+        var a1 = [1,2,3];
+        var a2 = a1;
+        a1[0]=5;
+        console.log('a1:',a1);
+        console.log('a2',a2);
+        a2[2]=9;
+        console.log('a1:',a1);
+        console.log('a2',a2);
+
+        //js中，可以直接对array[length+1]进行赋值
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>分支</title>
+</head>
+<body>
+    
+
+    <script>
+        /*执行顺序
+            1.顺序结构
+            2.分支结构
+                单一选择
+                简单二路选择(三目运算符)
+                switch多路选择
+            3.循环结构
+        */    
+
+        //单一选择
+        if(false){
+            console.log('hello world!');
+        }
+
+        //简单二路选择
+        if(true){
+            console.log(1);
+        }else{
+            console.log(2);
+        }
+        
+        //复杂二路语句
+        var msg=window.prompt("请输入你的年龄:");
+        if(msg<=18){
+            console.log("青少年");
+        }else if(msg>18&&msg<=40){
+            console.log("壮年");
+        }else{
+            console.log("中老年");
+        }
+
+        //三目运算符 ？:
+        var a = 11,b;
+        b = a > 10 ? '大于10':'小于10';
+        console.log(b);
+
+        //switch多路选择结构
+        var age= window.prompt("请输入你的序号： ");
+        // window.prompt录入的内容是 string类型
+        switch(age*1){
+            case 1:
+                console.log("赵");
+            case 2:
+                console.log("钱");
+            case 3:
+                console.log("孙");
+            case 4:
+                console.log("李");
+        }
+
+    </script>
+</body>
+</html>
