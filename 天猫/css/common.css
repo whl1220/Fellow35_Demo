@@ -193,6 +193,7 @@ li{
     height: 30px;
     margin: 3px 0 0;
 }
+
 /* 分类入口 */
 .container{
     width: 100%;
@@ -337,55 +338,52 @@ li{
 .menu-list>li:hover>.select-content{
     display: block;
 }
-.bottom{
-    width: 1230px;
-    margin: 0 auto;
+
+/* brand */
+.brand{
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
 }
 .brand-sale{
-    width: 100%;
-    height: 370px;
+    width: 1230px;
+    height: 397px;
+    margin: auto;
+    padding: 24px 30px 0 0;
 }
-.brand-sale-list{
+.sale-list{
     float: left;
-    width: 234px;
+    display: block;
+    width: 485px;
     height: 370px;
+    margin-right: 13px;
+    border:1px solid #eee;
+    /* background-color: #fff; */
 }
-.brand-sale-list>.title{
-    height: 55px;
-    line-height: 55px;
-    background-color: #fff;
-}
-#title-cn{
-    width: 72px;
-    height: 18px;
-    font-size: 18px !important;
-    font-weight: bold;
-    margin-left: 10px;
-    color: #333333;
-}
-#title-en{
-    width: 91.61px;
-    height: 44px;
-    font-size: 14px!important;
-    font-weight: bold;
-    margin-left: 10px;
-    color: #333333;
-}
-.more{
-    width: 56px;
+.sale-list>.title{
+    width: 485px;
     height: 54px;
-    margin-left: 10px;
-    padding-right: 10px;
-    color: #666666;
+    background-color: #fff;
+    position: relative;
 }
-#more-span{
-    display: none;
-}
-.more>img{
-    width: 18px;
+.title>.title-cn{
+    margin-left: 13px;
+    display: inline-block;
     height: 18px;
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333333;
 }
-.brand-sale-list>img{
-    width: 234px;
-    height: 316px;
+.title>.title-en{
+    margin-left: 10px;
+    display: inline-block;
+    height: 44px;
+}
+.title>.more{
+    font-size: 16px;
+
+}
+.sale-list>img{
+    width: 100%;
 }

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第一次测试No.26</title>
+</head>
+<body>
+    
+
+    <script>
+    
+        var arr =new Array;
+        for(var x=1000;x<10000;x++){
+            var a=Math.floor(x/1000);
+            var b=Math.floor(x/100)-a*10;
+            var c=Math.floor(x/10)-a*100-b*10;
+            if(x%13==0&&a==(b+c)){
+                arr.push(x);
+            }else{
+                continue;
+            }
+        }
+        console.log(arr);
+    </script>
+</body>
+</html>

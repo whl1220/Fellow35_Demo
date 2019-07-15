@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第一次测试No.19</title>
+</head>
+<body>
+    
+
+    <script>
+        function lunarYear(){
+            var d=new Date();
+            console.log('当前年份：'+d.getFullYear());
+            var toyear=d.getFullYear();
+            if(toyear%400==0||(toyear%4==0&&toyear%100!=0))
+            {console.log('是闰年！');}
+            else{console.log('不是闰年！');}
+        }
+        lunarYear();
+    
+    </script>
+</body>
+</html>

@@ -11,7 +11,33 @@
     <script>
         //面向对象
         //面向过程
+        var arr=[];//数组
+        var obj={};//对象
+
+        //key:value
+        var person = {
+            name:'xiaoming',
+            age:'18',
+            eat:function(){
+                console.log('eat...');
+            }
+        }
     
+        //对象属性的各种调用格式
+        console.log(person.name);
+        console.log(person['name']);
+
+        //引用类型数据
+        var cat=person;
+        console.log(person.age);
+        console.log(cat.age);
+        cat.age=19;
+        console.log(person.age);
+        console.log(cat.age);
+
+        var d =new Date();
+        var ie_year=d.getYear();
+        alert(ie_year);
     </script>
 </body>
 </html>

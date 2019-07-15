@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>第一次测试No.27</title>
+</head>
+<body>
+    
+    <script>
+        var count=0;
+        // var flag=true;
+       for(var n=100;n<1000;n++){
+            var flag=true;
+            for(var i=2;i<n;i++){
+                var x=n%i;
+                if(x==0){
+                    flag=false;
+                    break;
+                }
+            }
+            if(flag==true){
+                document.write(n+'&nbsp;');
+                count++;
+            }
+            if(count==6){
+                document.write("<br>");
+                count=0;
+            }
+            // flag=true;
+        }
+    </script>
+</body>
+</html>
