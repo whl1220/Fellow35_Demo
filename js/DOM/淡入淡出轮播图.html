@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>淡入淡出轮播图</title>
+
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            user-select: none;
+        }
+        li{
+            list-style: none;
+        }
+        #container{
+            width:600px;
+            height: 300px; 
+            margin: 100px auto;
+            position: relative;
+        }
+        #slider{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+
+        }
+        #slider>img{
+            display: block;
+            width: 600px;
+            height: 300px; 
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #pointer{
+            height: 5px;
+            margin-left: -60px;
+            position:absolute;
+            bottom: 20px;
+            left: 50%;
+        }
+        #pointer>li{
+            float: left;
+            width: 30px;
+            height: 5px;
+            margin: 0 5px;
+            background-color: rgba(0, 0, 0, 0.7);
+            cursor: pointer;
+        }
+        #slider>img.active{
+            opacity: 1;
+            -webkit-transition:opacity 1s ;
+            transition:opacity 1s;
+        }
+        #pointer>li.selected{
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+    
+
+
+
+    <div id="container">
+        <div id="slider">
+            <img src="img/pic1.jpg" alt="" class="active">
+            <img src="img/pic2.jpg" alt="">
+            <img src="img/pic3.jpg" alt="">
+        </div>
+        <ul id="pointer">
+            <li class="selected"></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+
+
+
+    <script>
+        var arr_li = document.getElementsByTagName('li');
+        var arr_img = document.getElementsByTagName('img');
+
+
+        for(var i=0;i<arr_li.length;i++){
+            arr_li[i].index=i;
+            arr_li[i].onclick =function(){
+                changeSlider(this.index);
+            }
+        }
+
+        function changeSlider(_tag){
+            for(var j= 0;j<arr_li.length;j++){
+                arr_li[j].className='';
+                arr_img[j].className='';
+            }
+            arr_li[_tag].className='selected';
+            arr_img[_tag].className='active';
+        }
+
+    </script>
+</body>
+</html>

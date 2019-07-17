@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>选项卡</title>
+
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        li{
+            list-style-type: none;
+        }
+
+        #container{
+            margin: 0 auto;
+            margin-top: 50px;
+            width: 300px;
+            height: 340px;
+            background-color: #ffffff;
+            border: 1px solid #000000;
+        }
+        #menu>li{
+            float: left;
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+        #content{
+            position: relative;
+        }
+        #content>div{
+            /* float: left; */
+            width: 300px;
+            height: 300px;
+            background-color: #ff8900;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+        #menu>.selected,#content>.active{
+            display: block;
+            background-color: #ff8900;
+        }
+    
+    </style>
+
+
+</head>
+<body>
+    
+    <div id="container">
+        <ul id="menu" class="clearfix">
+            <li class="selected">菜单一</li>
+            <li>菜单二</li>
+            <li>菜单三</li>
+        </ul>
+        <div id="content">
+            <div class="active">内容一</div>
+            <div>内容二</div>
+            <div>内容三</div>
+        </div>
+    </div>
+
+
+    <script>
+        var oMenu = document.getElementById('menu');
+        var aLi = oMenu.getElementsByTagName('li');
+        var oCon = document.getElementById('content');
+        var oDiv = oCon.getElementsByTagName('div');
+        
+        for(var i = 0;i<aLi.length;i++){
+            aLi[i].index = i;
+            aLi[i].onclick = function(){
+                clear(); 
+                aLi[this.index].className='selected';
+                oDiv[this.index].className='active';
+            }  
+        }
+
+        function clear(){
+            for(var j=0;j<oDiv.length;j++){
+                aLi[j].className='';
+                oDiv[j].className='';
+            }
+        }
+    </script>
+
+</body>
+</html>

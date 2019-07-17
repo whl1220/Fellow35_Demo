@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>右键菜单</title>
+
+    <style>
+    
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+        }
+        #menu{
+            padding-top: 10px;
+            width: 100px;
+            height: 120px;
+            background-color: #eee;
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        li.selected{
+            color: #ffffff;
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <ul id="menu">
+        <li >打开</li>
+        <li>下载</li>
+        <li>分享</li>
+        <li>删除</li>
+    </ul>
+
+
+    <script>
+        
+        var oMenu = document.getElementById('menu');
+        var aLi = oMenu.getElementsByTagName('li');
+        document.oncontextmenu = function(event){
+            //获取鼠标位置
+            var top = event.clientY;
+            var left = event.clientX;
+            //阻止浏览器默认事件
+            event.preventDefault();   
+            oMenu.style.top= top+'px';
+            oMenu.style.left= left+'px';
+            oMenu.style.display = 'block';
+            console.log(oMenu.style.top,oMenu.style.left);
+        }
+        for(var i=0;i<aLi.length;i++){
+            aLi[i].index=i;
+            aLi[i].onclick = function (){
+                for(var j=0;j<aLi.length;j++){
+                    aLi[j].className='';
+                }
+                aLi[this.index].className='selected';
+                console.log(aLi[this.index].innerHTML);
+            }
+        }
+        
+    </script>
+
+</body>
+</html>
