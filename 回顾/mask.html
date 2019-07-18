@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mask</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            user-select: none;
+
+        }
+        #container{
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            margin-top: 20px;
+            background-color: aqua;
+            position: relative;
+        }
+        #mask{
+            display: none;
+            width: 200px;
+            height: 200px;
+            background-color: rgba(0,0,0,0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #container:hover>#mask{
+            display: block;
+        }
+        #mask>span{
+            display: block;
+            height: 20px;
+            font-size: 12px;
+            line-height: 20px;
+            text-align: center;
+        }
+        #mask-text{
+            width: 70px;
+            margin-left: -40px;
+            padding: 0 5px;
+            position: absolute;
+            top: 40px;
+            left: 50%;
+        }
+        #mask-btn{
+            margin-left: -30px;
+            padding: 0 6px;
+            border-radius: 10px;
+            color: #fff;
+            background-color: #ff0036;
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="mask">
+            <span id="mask-text">优惠劵￥250</span>
+            <span id="mask-btn">点击进入</span>
+        </div>
+    </div>
+    <!-- <script>
+        var oCon = document.getElementById('container');
+        var oMask = document.getElementById('mask');
+        oCon.onmouseover = function(){
+            oMask.style.display='block';
+        }
+        oCon.onmouseout = function(){
+            oMask.style.display='none';
+        }
+    
+    </script> -->
+</body>
+</html>

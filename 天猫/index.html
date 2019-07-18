@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/iconfont.css">
-    <style>
-    </style>
 </head>
 <body>
 
@@ -41,30 +39,47 @@
                         <a href="#">收藏的宝贝</a>
                         <a href="#">收藏的店铺</a>
                     </div>
-                    <span id="sign">|</span>
+                    <span>|</span>
                 </li>
-                <li class="nav-menu-list nav-menu-yellow">
+                <li class="nav-menu-list nav-menu-yellow" id="phone">
                     <i class="iconfont icon-44"></i>
                     <a href="#">手机版</a>
+                    <div id="phone-qr">
+                        <div id="img"></div>
+                        <p><span>扫一扫，定制我的天猫</span></p>
+                        <b></b>
+                    </div>
                 </li>
                 <li class="nav-menu-list nav-menu-yellow">
                     <a href="#">淘宝网</a>
                 </li>
-                <li class="nav-menu-list nav-menu-special clearfix">
+                <li class="nav-menu-list nav-menu-special clearfix" id="support">
                     <a href="#">商家支持</a>
                     <span class="nav-menu-arrow"></span>
-                    <div class="nav-menu-inner" id="support">
-                        <h3>商家</h3>
-                        <p>
-                            <a href="#">商家中心</a>
-                            <a href="#">天猫规则</a>
-                            <a href="#">商家入驻</a>
-                            <a href="#">运营服务</a>
-                            <a href="#">商家品控</a>
-                            <a href="#">商家工具</a>
-                            <a href="#">天猫智库</a>
-                            <a href="#">喵言喵语</a>
-                        </p>
+                    <div class="nav-menu-inner">
+                        <ul>
+                            <li>
+                                <h3>商家</h3>
+                                <a href="#">商家中心</a>
+                                <a href="#">天猫规则</a>
+                                <a href="#">商家入驻</a>
+                                <a href="#">运营服务</a>
+                                <a href="#">商家品控</a>
+                                <a href="#">商家工具</a>
+                                <a href="#">天猫智库</a>
+                                <a href="#">喵言喵语</a>
+                            </li>
+                            <li>
+                                <h3>帮助</h3>
+                                <a href="#"></a>
+                                <a href="#"></a>
+                                <a href="#"></a>
+                                <a href="#"></a>
+                                <a href="#"></a>
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                        
                         <span></span>    
                         <p></p>
                     </div>
@@ -384,46 +399,280 @@
                 </ul>
             </div>
             <!-- 轮播图 -->
-            <div class="backgrond-pic">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <buton class="order"></buton>
-                <buton class="order"></buton>
-                <buton class="order"></buton>
-                <buton class="order"></buton>
-                <buton class="order"></buton>
-            </div>            
-        </div>
+            <div id="slider">
+                <div id="slider-img">
+                    <img src="images/pic1.jpg" alt="#" class="active">
+                    <img src="images/pic2.jpg" alt="#">
+                    <img src="images/pic3.jpg" alt="#">
+                    <img src="images/pic4.jpg" alt="#">
+                    <img src="images/pic5.jpg" alt="#">
+                </div>
+                <ul id="slider-pointer">
+                    <li class="selected"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
     </div>
 
-        <!-- bottom -->
+        <!-- brand-wall -->
     <div class="brand">
-        <div class="brand-sale">
-            <ul class="brand-sale-wall">
-                <li class="sale-list">
+            <ul id="brand-sale" class="clearfix">
+                <li class="sale-wall">
                     <div class="title">
                         <span class="title-cn">品牌闪购</span>
                         <span class="title-en">BRAND SALE</span>
-                        <span class="more">更多
-                                <a href="">
-                                    <img src="https://img.alicdn.com/tfs/TB1B7RoaMMPMeJjy1XcXXXpppXa-36-36.png" alt="#">
-                                </a>
+                        <span class="more">
+                            <a href="#">
+                                <img src="https://img.alicdn.com/tfs/TB1B7RoaMMPMeJjy1XcXXXpppXa-36-36.png" alt="#">
+                            </a>
                         </span>
-                        
                     </div>
-                    <img src="https://img.alicdn.com/tfs/TB1jkKLXEY1gK0jSZFCXXcwqXXa-966-644.jpg_620x10000q100.jpg_.webp" alt="#">
+                    <img src="https://img.alicdn.com/tfs/TB15I0OLMHqK1RjSZJnXXbNLpXa-468-644.jpg_400x400q100.jpg_.webp" alt="#">
+                </li>
+                <li class="sale-wall">
+                    <div class="title">
+                        <span class="title-cn">聚名品</span>
+                        <span class="title-en">LUXURY CHANNEL</span>
+                        <span class="more">更多
+                            <a href="#">
+                                <img src="https://img.alicdn.com/tfs/TB1B7RoaMMPMeJjy1XcXXXpppXa-36-36.png" alt="#">
+                            </a>
+                        </span>
+                    </div>
+                    <img src="https://img.alicdn.com/tfs/TB1N45jX.H1gK0jSZSyXXXtlpXa-966-644.jpg_620x10000q100.jpg_.webp" alt="#">
+                </li>
+                <li class="sale-wall">
+                    <div class="title">
+                        <span class="title-cn">品牌活动</span>
+                        <span class="title-en">BRAND ACTIVITY</span>
+                        <span class="more">更多
+                            <a href="#">
+                                <img src="https://img.alicdn.com/tfs/TB1B7RoaMMPMeJjy1XcXXXpppXa-36-36.png" alt="#">
+                            </a>
+                        </span>
+                    </div>
+                    <img src="https://img.alicdn.com/tps/i4/TB1os1gefWG3KVjSZFgSuvTspXa.jpg_620x10000q100.jpg_.webp" alt="#">
                 </li>
             </ul>
-        </div>
-        <div class="brand-list">
-            <ul >
-
+            <ul id="brand-wall">
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/TB1D0sLnHSYBuNjSspiXXXNzpXa?abtest=&pos=1&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_125x125q100.jpg_.webp" alt="#">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/TB1eIWtutcnBKNjSZR0XXcFqFXa?abtest=&pos=2&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_125x125q100.jpg_.webp" alt="#">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/TB1ilbUHpXXXXb8XXXXSutbFXXX.jpg_125x125q100.jpg_.webp" alt="#">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/TB1TJNTPXXXXXcqXVXXSutbFXXX.jpg_125x125q100.jpg_.webp" alt="#">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/TB1a3bVRXXXXXbfXFXXXXXXXXXX?abtest=&pos=5&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_125x125q100.jpg_.webp" alt="#">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/TB1kloQx8mWBuNkSndVSuwsApXa.jpg_125x125q100.jpg_.webp" alt="#">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/TB1gD8NhDlYBeNjSszcXXbwhFXa?abtest=&pos=7&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_125x125q100.jpg_.webp" alt="">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/TB1_aF7pG6qK1RjSZFmXXX0PFXa?abtest=&pos=8&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_125x125q100.jpg_.webp" alt="">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/TB12cBSirGYBuNjy0FoXXciBFXa?abtest=&pos=9&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_125x125q100.jpg_.webp" alt="">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/TB1IJymuk9WBuNjSspeXXaz5VXa?abtest=&pos=10&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_125x125q100.jpg_.webp" alt="">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/imgextra/i4/928417138/O1CN019OFNEK22bFcXdLUb5_!!928417138.png_125x125q100.jpg_.webp" alt="#">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/TB1KH4GQpXXXXb_apXXSutbFXXX.jpg_125x125q100.jpg_.webp" alt="#">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/TB1_kq7j1SSBuNjy0FlXXbBpVXa?abtest=&pos=13&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_125x125q100.jpg_.webp" alt="#">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/TB1sM7GSXXXXXb3aXXXXXXXXXXX?abtest=&pos=14&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_125x125q100.jpg_.webp" alt="#">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/TB1A9Eicf5TBuNjSspmXXaDRVXa?abtest=&pos=15&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_125x125q100.jpg_.webp" alt="#">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/TB1R1K4GFmWBuNjSspdSuvugXXa.jpg_125x125q100.jpg_.webp" alt="#">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/T25cAwXGhXXXXXXXXX-1785908005.jpg_125x125q100.jpg_.webp" alt="">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/TB1igurtrSYBuNjSspfXXcZCpXa?abtest=&pos=18&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_125x125q100.jpg_.webp" alt="">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/TB1gOvrmZLJ8KJjy0FnXXcFDpXa?abtest=&pos=19&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_125x125q100.jpg_.webp" alt="">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/T11mf3Xf0iXXb1upjX.jpg_125x125q100.jpg_.webp" alt="">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/TB1D0sLnHSYBuNjSspiXXXNzpXa?abtest=&pos=1&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_125x125q100.jpg_.webp" alt="#">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/TB1eIWtutcnBKNjSZR0XXcFqFXa?abtest=&pos=2&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_125x125q100.jpg_.webp" alt="#">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/TB1ilbUHpXXXXb8XXXXSutbFXXX.jpg_125x125q100.jpg_.webp" alt="#">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/TB1TJNTPXXXXXcqXVXXSutbFXXX.jpg_125x125q100.jpg_.webp" alt="#">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/TB1a3bVRXXXXXbfXFXXXXXXXXXX?abtest=&pos=5&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_125x125q100.jpg_.webp" alt="#">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/TB1kloQx8mWBuNkSndVSuwsApXa.jpg_125x125q100.jpg_.webp" alt="#">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/TB1gD8NhDlYBeNjSszcXXbwhFXa?abtest=&pos=7&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_125x125q100.jpg_.webp" alt="">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/TB1_aF7pG6qK1RjSZFmXXX0PFXa?abtest=&pos=8&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_125x125q100.jpg_.webp" alt="">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <img src="https://img.alicdn.com/i2/2/TB12cBSirGYBuNjy0FoXXciBFXa?abtest=&pos=9&abbucket=&acm=09042.1003.1.1200415&scm=1007.13029.131809.100200300000000_125x125q100.jpg_.webp" alt="">
+                    <div class="mask">
+                        <span id="mask-text">优惠劵 ￥250</span>
+                        <span id="mask-btn">点击进入</span>
+                    </div>
+                </li>
+                <li class="brand-item">
+                    <i class="rotate-icon fp-iconfont"></i>
+                    <span>换一批</span>
+                </li>
+                
             </ul>
-        </div>
+        
         
     </div>
+
+
+
+    <script src="js/index.js"></script>
 </body>
 </html>

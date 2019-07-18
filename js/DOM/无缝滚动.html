@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>无缝滚动</title>
+
+    <style>
+    
+        *{
+            margin: 0;
+            padding: 0;
+            user-select: none;
+        }
+        li{
+            list-style: none;
+        }
+        #container{
+            width:425px;
+            height:  240px;
+            margin: 50px auto;
+            border: 1px solid aqua;
+            position: relative;
+            overflow: hidden;
+        }
+        #slider{
+            width: 900px;
+            height: 100px;
+            /* border: 1px solid purple; */
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #slider>li{
+            float: left;
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin: 0 5px;
+            line-height: 100px;
+            text-align: center;
+            color: white;
+            background-color: pink;
+        }
+        #btn-list{
+            margin-left: -90px;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+        }
+        #btn-list>span{
+            float: left;
+            display: block;
+            width: 80px;
+            height: 20px;
+            margin: 0 5px;
+            text-align: center;
+            color: white;
+            background-color: yellowgreen;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <ul id="slider">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+        <div id="btn-list">
+            <span id="left">左</span>
+            <span id="right">右</span>
+        </div>
+    </div>
+
+
+    <script>
+        var timer;
+        tag=10;
+        var oDiv = document.getElementById('slider');
+        oDiv.innerHTML+=oDiv.innerHTML;
+        oDiv.style.left=-oDiv.offsetWidth/2+'px';
+        console.log(oDiv.style.left);
+        var btn_l=document.getElementById('left');
+        var btn_r=document.getElementById('right');
+        // console.log(btn_l);
+        btn_l.onclick=function(){
+            tag=10;
+            gotimer();
+        }
+        btn_r.onclick=function(){
+            tag=-10;
+            gotimer();
+        }
+        function gotimer(){
+            timer=setInterval(function(){
+                if(tag>0){//左滚动
+                    oDiv.style.left=oDiv.offsetLeft>0?-oDiv.offsetWidth/2+'px':oDiv.offsetLeft+tag+'px';
+                    console.log(oDiv.style.left);
+                }else{//右滚动
+                    oDiv.style.left=oDiv.offsetLeft<-oDiv.offsetWidth/2?0+'px':oDiv.offsetLeft+tag+'px';
+                    console.log(oDiv.style.left);
+                }
+            },80);
+        }
+        
+    </script>
+
+</body>
+</html>
