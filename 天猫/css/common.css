@@ -121,27 +121,101 @@ li{
 }
 /* 商家支持 */
 #support>.nav-menu-inner{
-    display: block;
-    width:122px;
-    height: 176px; 
+    display: none;
+    width:122px; 
     padding: 8px 10px;
     position: absolute;
     top: 32px;
     left: -74px;
 }
-.nav-menu-inner>ul{
+#support ul{
     overflow: hidden;
     width: 122px;
     margin-top: -5px;
+    color: #999;
+}
+#support ul>li{
+    padding: 5px 0;
+    border-bottom:1px dotted #827777;
+    margin-right: -20px; 
+    overflow: hidden;
+}
+#support ul h3{
+    font-size: 100%;
+    font-weight: 700;
+    color: #666;
+}
+#support ul a{
+    display:inline-block;
+    width: 48px;
+    margin-right: 20px;
+    line-height: 22px;
+    font-size: 12px;
+    color: #999;
+
+}
+/* 网站导航 */
+#site-nav>.nav-menu-inner{
+    display: block;
+    width: 1198px;
+    padding: 25px 0;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    overflow: hidden;
+    border-color: #eee;
+    background-color: #fff;
+    position: absolute;
+    top: 32px;
+    left: -1115px;
+    z-index: 101;
+}
+#site-nav>.nav-menu-inner>li{
+    float: left;
+    display: block;
+    width: 455px;
+    height: 110px;
+    padding-left: 30px;
+    border-right: 1px solid #f5f5f5;
+
+}
+#site-nav li:last-child{
+    width: auto;
+    border-right: none;
+}
+#hot>h2,#market>h2,#help>h2{
+    float: left;
+    padding-bottom: 8px;
+    font-size: 16px;
+    font-weight: 100;
+    color: #ff5600;
+}
+#hot>h2>span,#market>h2>span,#help>h2>span{
+    padding-left: 6px;
+    font-size: 16px;
+    font-weight: 100;
+    color: #ff5600;
+}
+nav-menu-inner>#hot>.site-list::before{
+    content: '';
+    display: block;
+    clear: both;
 }
 
-
-
+.site-list>li{
+    float: left;
+    width: 95px;
+    padding: 6px 0;
+    overflow: hidden;
+}
 
 /* hover */
 .nav-menu-special:hover>.nav-menu-inner{
     display: block;
 }
+#support:hover>.nav-menu-inner{
+    display: block;
+}
+
 .nav-menu-special:hover>i{
     color: #ff0036;
 }
