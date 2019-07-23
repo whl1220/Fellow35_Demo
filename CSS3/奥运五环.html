@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>奥运五环</title>
+    <style>
+
+        #container{
+            position: relative;
+        }
+        #container>div{
+            width: 200px;
+            height: 200px;
+            border: 10px solid #000;
+            border-radius: 50%;
+            position: absolute;
+        }
+        #container>div::after{
+            content: '';
+            display: block;
+            width: 200px;
+            height: 200px;
+            border: 10px solid pink;
+            z-index: -1;
+            border-radius: 50%;
+            position: absolute;
+            top: -10px;
+            left: -10px;
+
+        }
+        #container>div:nth-child(1){
+            border-color: blue;
+            top: 0;
+            left: 0;
+        }
+        #container>div:nth-child(1)::after{
+            border-color: blue;
+            border-bottom-color: transparent;
+            z-index: 1;
+        }
+
+        #container>div:nth-child(2){
+            border-color: black;
+            top: 0;
+            left: 230px;
+        }
+        #container>div:nth-child(2)::after{
+            border-color: black;
+            border-left-color: transparent;
+            z-index: 1;
+        }
+        #container>div:nth-child(3){
+            border-color: red;
+            top: 0;
+            left: 460px;
+        }
+        #container>div:nth-child(3)::after{
+            border-color: red;
+            border-left-color: transparent;
+            z-index: 1;
+        }        
+        #container>div:nth-child(4){
+            border-color: yellow;
+            top: 110px;
+            left: 110px;
+        }
+        #container>div:nth-child(5){
+            border-color: green;
+            top: 110px;
+            left: 340px;
+        }
+        #container>div:nth-child(5)::after{
+            border-color: green;
+            border-top-color: transparent;
+            border-right-color: transparent;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+
+
+</body>
+</html>

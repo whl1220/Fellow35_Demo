@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>多行布局</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #column_1,#column_2{
+        display: inline-block;
+        width: 200px;
+        height: 1000px;
+        margin:100px 100px;
+        position: relative;
+    }
+    .first{
+        height: 200px;
+        background-color: red;
+    }
+    .second{
+        background-color: yellowgreen;
+    }
+    .third{
+        height: 200px;
+        background-color: blue;
+    }
+
+    /* column_1 */
+    #column_1>.first{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    #column_2>.second{
+        position: absolute;
+        top: 200px;
+        left: 0;
+        right: 0;
+        bottom: 200px;
+    }
+    #column_1>.third{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    /* column_2 */
+    #column_2{
+        display: flex;
+        flex-direction: column;
+    }
+    #column_2>.second{
+        flex-grow: 1;
+    }
+    </style>
+</head>
+<body>
+    
+
+    <div id="column_1">
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+    </div>
+    <div id="column_2">
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+    </div>
+</body>
+</html>
