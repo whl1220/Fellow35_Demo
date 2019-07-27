@@ -17,41 +17,38 @@
     height: 36px;
     margin: 0 auto;
     padding-top: 38px;
-    /* border: 2px solid #ff0036; */
 }
 .research-content>input{
+    float: left;
     width: 479px;
     height: 22px;
-    line-height: 22px;
     padding: 5px 3px 5px 5px;
     font-size: 14px;
-    float: left;
+    line-height: 22px;
     border: 2px solid #ff0036;
 
 }
 .research-content>button{
     width: 132px;
     height: 36px;
-    line-height: 36px;
-    font-size: 18px;
     border: 2px solid #ff0036;
+    font-size: 18px;
+    line-height: 36px;
     color: #fff;
     background-color: #ff0036;
 }
 .search-type{
-    padding-top:8px ;
-    height: 24px;
-    font-size: 14px;
     width: 624px;
+    height: 24px;
     margin: 0 auto;
-    /* position: relative; */
+    padding-top:8px;
+    font-size: 14px;
 }
 .search-type>a{
     float: left;
     padding: 0 12px;
-    /* font-size: 16px; */
-    color: #999999;
     border-right:1px solid #999;
+    color: #999999;
 }
 .search-type>a:first-child{
     padding-left: 0;
@@ -72,8 +69,8 @@
 .banner-wrapper{
     width: 1030px;
     height: 35px;
-    line-height: 35px;
     font-size: 16px;
+    line-height: 35px;
     position: absolute;
     left: 348px;
 }
@@ -95,21 +92,21 @@
     background-color:  #eee;
 }
 .container-wrapper{
-    position: relative;
     width: 1230px;
     height: 500px;
     margin: 0 auto;
+    position: relative;
 }
 .menu{
-    position: absolute;
-    top: -36px;
     width: 200px;
     height: 36px;
-    line-height: 36px;
     font-size: 16px;
     font-weight:bold;
+    line-height: 36px;
     color: #fff;
     background-color: #ff0036;
+    position: absolute;
+    top: -36px;
     z-index: 100;
 }
 .menu>i{
@@ -129,17 +126,17 @@
 .menu-list>li{
     width: 200px;
     height: 31.2px;
-    line-height: 31.2px;
     font-size: 14px;
     font-weight: normal;
+    line-height: 31.2px;
 }
 .menu-list i{
-    display: block;
     float: left;
+    display: block;
     width: 16px;
     height: 31px;
-    font-size: 16px;
     margin: 0 4px 0 14px;
+    font-size: 16px;
     color: #999;
 }
 .menu-list a{
@@ -177,7 +174,7 @@
 .content-text{
     width: 583px;
     height: 462px;
-    margin: 19px 30px;
+    margin: 20px 0 0 30px;
     color: black;
 }
 .main>h1{
@@ -200,30 +197,30 @@
     display: inline-block;
     width: 56px;
     height: 22px;
-    line-height: 22px;
-    font-size: 14px;
     margin-left: 13px;
+    font-size: 14px;
+    line-height: 22px;
     color: black;
 }
 .content-pic{
-    position: absolute;
-    right: 0;
-    top: 0;
     width: 189px;
     height: 480px;
     padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .content-pic>a{
     float: left;
-    width: 73px;
-    height: 37px;
+    width: 92px;
+    height: 46px;
     margin: 0 0 1px 1px;
     padding:5px 10px;
 }
 .content-pic img{
-    width: 73px;
-    height: 36.5px;
+    width: 100%;
+    height: 100%;
     color: black;
 }
 .menu-list>li:hover>.select-content{
@@ -277,9 +274,9 @@
 
 /* brand-wall */
 .brand{
+    overflow: hidden;
     width: 100%;
     height: 735px;
-    overflow: hidden;
     background-color: #eee;
 } 
 .brand>#brand-sale{
@@ -291,17 +288,17 @@
     position: relative;
 }
 .sale-wall{
+    overflow: hidden;
     float: left;
     width: 485px;
     height: 370px;
     margin-right: 13px;
-    overflow: hidden;
 }
 .sale-wall>.title{
     width: 100%;
     height: 54px;
-    line-height: 54px;
     font-weight: bold;
+    line-height: 54px;
     color: #333333;
     background-color: #fff;
     position: relative;
@@ -309,8 +306,8 @@
 .title-cn{
     height: 18px;
     margin-left: 10px;
-    line-height: 18px;
     font-size: 18px;
+    line-height: 18px;
 }
 .title-en{
     display: inline-block;
@@ -321,9 +318,9 @@
 .title>.more{
     display: inline-block;
     height: 54px;
-    line-height: 54px;
     font-size: 16px;
     font-weight: normal;
+    line-height: 54px;
     color: #666666;
     position: absolute;
     right: 0;
@@ -365,8 +362,8 @@
 li.brand-item>img{
     width: 100px;
     height: 50px;
-    line-height: 108px;
     margin-top: -25px;
+    line-height: 108px;
     position: absolute;
     top: 50%;
     left: 10px; 
@@ -389,8 +386,8 @@ li.brand-item:hover>.mask{
     height: 18px;
     margin-left: -40px; 
     font-size: 12px;
-    line-height: 18px; 
     text-align: center;
+    line-height: 18px; 
     color: #FAFAFA;
     position: absolute;
     top: 38px;
@@ -400,9 +397,9 @@ li.brand-item:hover>.mask{
     display: block;
     width: 60px;
     height: 18px;
-    border-radius: 9px;
     margin-left: -35px;  
     padding: 0 5px;
+    border-radius: 9px;
     line-height: 18px;
     color: #FAFAFA;
     background-color: #ff0036;
@@ -415,9 +412,9 @@ li.brand-item:hover>.mask{
     height: 40px;
     margin-top: -30px;
     margin-left:-20px; 
-    line-height: 40px;
-    text-align: center;
     border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
     color: #999;
     background-color: yellowgreen;
     position: absolute;
@@ -429,9 +426,9 @@ li.brand-item:hover>.mask{
     height: 18px;
     margin-left: -45px;
     padding: 0 5px;
-    line-height: 18px;
     font-size: 14px;
     text-align: center;
+    line-height: 18px;
     color: #999;
     position: absolute;
     bottom: 20px;

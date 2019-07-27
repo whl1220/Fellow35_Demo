@@ -1,0 +1,130 @@
+/* 搜索框 */
+header{
+    display: flex;
+    width: 100%;
+    margin-top: .10rem;
+}
+header input{
+    flex-grow: 1;
+    height: .25rem;
+    margin-left: .10rem;
+    border-radius: .13rem;
+    font-size: .14rem;
+    text-align: center;
+    line-height: .25rem;
+    color: #999999;
+    background-size: .15rem .15rem;
+    background: #EEEEEE url(../image/icon-search.png) .10rem .05rem no-repeat;   
+}
+header span{
+    width: .14rem;
+    height: .15rem;
+    margin: .05rem .10rem .05rem .11rem;
+    color: #DDDDDD;
+    background-size: 100% 100%;
+    background: url('../image/icon-warning.png') 0 0 no-repeat;
+}
+/* 直播间 */
+#living{
+    width: 100%;
+    height: 1.95rem;
+    margin-top: 0.10rem;
+    background-color: rgb(220, 232, 232);
+    position: relative;
+}
+#living img{
+    width: 100%;
+    height: 100%;
+}
+#living span{
+    width: .50rem;
+    height: .20rem;
+    border-radius: .03rem;
+    font-size: .10rem;
+    text-align: center;
+    line-height: 1.5;
+    color: #FFFFFF;
+    background-color: #E30025;
+    position: absolute;
+    top: .15rem;
+    left: .15rem;
+}
+#living span::before{
+    content: '·';
+    display: block;
+    width: .03rem;
+    height: .03rem;
+    margin:auto .05rem;
+    line-height: .20rem;
+}
+/* banner */
+#banner{
+    display: flex;
+    height: .80rem;
+    padding: 0 .20rem;    
+}
+#banner li{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    line-height: .80rem;
+    background-color: #FFFFFF;
+}
+#banner li>img{
+    width: .40rem;
+    height: .40rem;
+    margin:.10rem auto;
+    border-radius: 50%;
+}
+#banner li>span{
+    display: block;
+    width: .50rem;
+    height: .10rem;
+    margin: 0 auto;
+    font-size: .10rem;
+    text-align: center;
+    line-height: 1.0;
+    color: black;
+}
+/* 优惠券 */
+#adv{
+    margin-top: 0;
+    padding: .05rem .10rem;
+}
+/* 购物墙 */
+#content{
+    width: 100%;
+    height: 7.35rem;
+    background-color: aqua;
+    /* background-color: rgb(238, 238, 238); */
+}
+#content::before{
+    display: block;
+    width: 100%;
+    height: .06rem;
+    content: '';
+    background-color: rgb(238,238,238);
+}
+.title{
+    /* display: flex; */
+    width: 100%;
+    height: .50rem;
+    background-color: #FFFFFF;
+}
+.title>i{
+    width: .25rem;
+    height: .25rem;
+    padding: .13rem .10rem;
+    line-height: .50rem;
+}
+/* 
+.title>.text>.title-cn{
+    width: .55rem;
+    font-size: .14rem;
+}
+.title>.text>.title-en{
+    width: .89rem;
+    font-size: .09rem;
+} */

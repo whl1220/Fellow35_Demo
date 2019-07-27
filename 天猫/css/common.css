@@ -14,6 +14,7 @@ li{
     display: block;
     clear: both;
 }
+
 /* nav */
 .nav{
     height: 32px;
@@ -24,15 +25,17 @@ li{
 .nav-wrapper{
     width: 1230px;
     height: 100%;
-    line-height: 32px;
     margin: 0 auto;
+    line-height: 32px;
+    
 }
 .nav-main{
     float: left;
 }
 .nav-main>a{
-    color: #fff;
     padding: 0 10px;
+    color: #fff;
+
 }
 .nav-menu{
     float: right;
@@ -88,21 +91,22 @@ li{
     box-shadow: 0 0 5px #aaa;
     background-color: #fff;
     position: absolute;
-    left: -48px;
     top: 26px;
+    left: -48px;
+
 }
 #phone-qr>#img{
+    overflow: hidden;
     width: 175px;
     height: 175px;
     margin: 5px 0 0 0;
     background: url('https://img.alicdn.com/tfs/TB1vJ0POwTqK1RjSZPhXXXfOFXa-175-215.png') 0 0 no-repeat;
-    overflow: hidden;
 }
 #phone-qr>p{
-    background: url('https://img.alicdn.com/tps/TB1sR93OFXXXXaAXXXXXXXXXXXX-145-30.png') center bottom no-repeat;
-    text-indent: -99999;
     margin: 0 15px;
     line-height: 35px;
+    text-indent: -99999;
+    background: url('https://img.alicdn.com/tps/TB1sR93OFXXXXaAXXXXXXXXXXXX-145-30.png') center bottom no-repeat;
 }
 #phone-qr>p>span{
     opacity: 0;
@@ -135,10 +139,10 @@ li{
     color: #999;
 }
 #support ul>li{
+    overflow: hidden;
+    margin-right: -20px;
     padding: 5px 0;
     border-bottom:1px dotted #827777;
-    margin-right: -20px; 
-    overflow: hidden;
 }
 #support ul h3{
     font-size: 100%;
@@ -152,16 +156,15 @@ li{
     line-height: 22px;
     font-size: 12px;
     color: #999;
-
 }
 /* 网站导航 */
 #site-nav>.nav-menu-inner{
+    overflow: hidden;
     display: block;
     width: 1198px;
     padding: 25px 0;
     border-width: 0 1px 1px 1px;
     border-style: solid;
-    overflow: hidden;
     border-color: #eee;
     background-color: #fff;
     position: absolute;
@@ -176,7 +179,6 @@ li{
     height: 110px;
     padding-left: 30px;
     border-right: 1px solid #f5f5f5;
-
 }
 #site-nav li:last-child{
     width: auto;
@@ -202,10 +204,10 @@ nav-menu-inner>#hot>.site-list::before{
 }
 
 .site-list>li{
+    overflow: hidden;
     float: left;
     width: 95px;
     padding: 6px 0;
-    overflow: hidden;
 }
 
 /* hover */
