@@ -224,50 +224,40 @@ header span{
     line-height: 1.0;
     color: #EF1C00;
 }
-footer::before{
-    display: block;
-
-    width: 200%;
-    height: 200%;
-    border: 1px solid #
-}
-footer{
+/* footer */
+#footer{
     display: flex;
+    /* width: 3.75rem; */
     width: 100%;
-    padding: 0 .10rem;
+    height: .495rem;
     background-color: #FFFFFF;
     position: fixed;
     bottom: 0;
 }
-footer>span::before{
+#footer::after{
+    display: block;
+    border-top: 1px solid #333333;
+    content: '';
+    -webkit-transform: scale(0.50);
+    transform: scale(0.50);    
+}
+#footer>li{
+    flex: 1;
+}
+#footer img{
     display: block;
     width: .20rem;
     height: .20rem;
-    margin: .05rem auto;
-    content: '';
-    /* color: #333333; */
-    background-size: 100% 100%;
+    margin: 0 auto;
+    padding-top:.07rem;
+    padding-left: .20rem;
+    padding-right: .20rem;
 }
-footer>span:nth-child(1)::before{
-    background: url('../image/1x/icon-index.png') 0 0 no-repeat;
-}
-footer>span:nth-child(2)::before{
-    background: url('../image/1x/icon-class.png') 0 0 no-repeat;
-}
-footer>span:nth-child(3)::before{
-    background: url('../image/1x/icon-living.png') 0 0 no-repeat;
-}
-footer>span:nth-child(4)::before{
-    background: url('../image/1x/icon-cart.png') 0 0 no-repeat;
-}
-footer>span:nth-child(5)::before{
-    background: url('../image/1x/icon-my.png') 0 0 no-repeat;
-}
-footer>span{
-    flex: 1;
+#footer p{
     width: .30rem;
-    padding: .025rem .20rem;
+    height: .10rem;
+    margin: .05rem auto;
     font-size: .10rem;
     text-align: center;
-    /* color: #333333; */
+    color: #333333;
 }
