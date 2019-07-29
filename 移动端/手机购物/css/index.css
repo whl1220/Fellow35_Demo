@@ -236,10 +236,14 @@ header span{
 }
 #footer::after{
     display: block;
+    width: 100%;
     border-top: 1px solid #333333;
     content: '';
-    -webkit-transform: scale(0.50);
-    transform: scale(0.50);    
+    -webkit-transform: scaleY(0.50);
+    transform: scaleY(0.50);    
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 #footer>li{
     flex: 1;

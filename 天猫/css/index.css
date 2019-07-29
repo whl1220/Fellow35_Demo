@@ -213,10 +213,11 @@
 
 .content-pic>a{
     float: left;
-    width: 92px;
-    height: 46px;
+    width: 68px;
+    height: 38px;
     margin: 0 0 1px 1px;
     padding:5px 10px;
+    background-color: #fff;
 }
 .content-pic img{
     width: 100%;

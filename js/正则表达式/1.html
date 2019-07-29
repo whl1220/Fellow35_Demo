@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>正则表达式_1</title>
+
+
+</head>
+<body>
+    
+
+
+    <script>
+        //正则表达式 从头开始，匹配即停止，会尽可能多的去匹配 但是会严格区分大小写
+        var reg = /abc/;    
+        var reg1 = new RegExp('aaa');
+        var str = 'abcdefg';
+        //reg.exec(str)
+        //如果匹配成功返回数组，第0项是匹配的内容，index是索引位置
+        //如果匹配失败,返回null
+        console.log(reg.exec(str));
+        //reg.test(str); 匹配成功返回true，失败返回false
+        console.log(reg1.test(str));
+        // /c{n} 匹配连续的n个c/
+        var reg2 = /bc{2}/
+        var str1 = 'bcbc果冻';      //null
+        var str2 = 'aabbcbbcccc';   //"bcc" index:6
+        console.log(reg2.exec(str1));
+        console.log(reg2.exec(str2));
+        //g{m,n} 连续的m或者n个g   m<=  <=n
+        var reg3 = /g{3,5}/;
+        var str3 = 'gggmmm';
+        var str_3 = 'ggggmmmggggg'; 
+        //v{n,} 大于等于n个连续的v 尽可能的匹配
+        // *,+,?
+        // a* => a{0,} 大于等于0个连续的a 字符串首字母不是a,返回""
+        // n+ => n{1,} 大于等于1个连续的n
+        // c? => c{0,1} 一个或者0个 字符串首字母不是a,返回""
+
+        //贪婪模式与非贪婪模式
+        //?后缀表示非贪婪
+        //a?? 第一个? => a?  第二个？ =>声明非贪婪模式
+
+        //^c 以c开头的
+        var reg_4 = /^cc/;
+        var str_4 = 'cc果冻';
+        console.log(reg_4.exec(str_4));
+        //c$ 以c结尾
+        //.  除换行符\n以外的所有字符  默认返回匹配的第一个字符 .+尽可能多的匹配
+        var reg_5 = /.+/;
+        var str_5 = '\nsvghtmlcssjs';
+        console.log(reg_5.exec(str_5));
+        // ^.表示以（除换行符\n以外的）任意字符开头的
+        var reg_6 = /^./;
+        // /b|c/ => b或c
+        // /^b|c.+/ => b开头 或 c.+
+        // /^[abc]/ => a或b或c开头的
+        // /^[a-zA-Z0-9]/ => 大写字母&小写字母&数字开头
+        // /[^abc]/ 反字符集合 除abc以外的第一个任意字符 
+
+
+        var str_6 = 'cainiao8911'
+        var reg_6 = /cainiao(?=9)/
+        console.log(reg_6.exec(str_6));
+
+    </script>
+</body>
+</html>
