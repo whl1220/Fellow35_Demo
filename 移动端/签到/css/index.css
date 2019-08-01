@@ -30,7 +30,7 @@ header>#right{
     line-height: 1.0;
     color: #333333;
 }
-/* background */
+/* 签到背景 */
 #background{
     height: 1.65rem;
     background:linear-gradient(90deg,rgba(239,28,0,1),rgba(255,60,0,1));
@@ -64,7 +64,7 @@ header>#right{
     color: #ffffff;
 }
 
-/* panel */
+/* 签到面板 */
 #panel{
     height: 1.15rem; 
     text-align: center;
@@ -74,7 +74,7 @@ header>#right{
     height:.40rem;
     margin-top: .60rem;
     margin-bottom: .10rem;
-    border-radius:20px;
+    border-radius:.20rem;
     font-size: .12rem;
     text-align: center;
     line-height: .40rem;
@@ -93,8 +93,8 @@ header>#right{
     right: .10rem;
 }
 #panel>#record>p{
-    height: 55px;
-    border-bottom: 1px dashed #DDDDDD;
+    height: .55rem;
+    border-bottom: .01rem dashed #DDDDDD;
     position: relative;
 }
 #panel>#record>p>span:nth-child(1){
@@ -194,7 +194,6 @@ header>#right{
 }
 #today-hot{
     display: flex;
-    width: 3.55rem;
     height: 1.20rem;
     margin: 0 .10rem;
     position: relative;
@@ -208,7 +207,6 @@ header>#right{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 199;
     transform-origin: 0 0;
     -webkit-transform: scale(0.5);
     transform: scale(0.5);
