@@ -11,6 +11,7 @@
             height: 100px;
             margin: 20px 10px;
             background-color: aqua;
+            position: relative;
         }
         #div1{
             border: 1px solid black;
@@ -29,10 +30,14 @@
             width: 200%;
             height: 200%;
             border: 1px solid black;
+            content: '';
             transform-origin: 0 0;
             -webkit-transform: scale(0.50);
-            transform: scale(0.50);    
-            content: '';
+            transform: scale(0.50);
+            position: absolute;
+            top: 0;
+            left: 0;    
+
         }
         /* 方法三 */
         #div4{

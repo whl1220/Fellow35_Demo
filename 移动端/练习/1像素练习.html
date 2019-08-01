@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1像素练习</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 2.00rem;
+            height: 2.00rem;
+            background-color: rgba(0,0,255,.2);
+            position: relative;
+        }
+        div::after{
+            display: block;
+            width: 199%;
+            height: 199%;
+            border: 1px solid #333333;
+            content: '';
+            transform-origin: 0 0;
+            -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        button{
+            width: .50rem;
+            height: .30rem;
+            position: relative;
+            z-index: 101;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div>
+        <button id="btn"></button>
+    </div>
+
+    <script>
+        var btn = document.getElementById('btn')
+        btn.addEventListener('click',function(){
+            alert('hello world')
+        })
+    </script>
+    <script src="../../js/rem.js"></script>
+</body>
+</html>

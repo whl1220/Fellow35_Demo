@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>正则表达式练习</title>
 </head>
 <body>
     
@@ -18,26 +18,16 @@
         var reg_email = /^[A-z0-9_.-]+\@[\w_.-]+\.[A-z]{2,4}$/;    
         
         //3. 匹配身份证号 15位全数字 或 18位最后一位可以是x
-        var reg_id = /^\d{15}$|^\d{17}[0-9X]$/;
+        var reg_id = /^\d{15}$|^\d{17}[X0-9]$/;
         // var reg_id_18 = /^[0-9]|(?:^[0-9]$X)+/;
         var str_id_1 = '231012587445987';
-        var str_id_2 = '42101219681104523x'; 
-        if(str_id_1.length == 15 && reg_id.test(str_id_1)){
-            // console.log(str_id_1.length);
-            console.log(reg_id.exec(str_id_1));
-        }
-        if(str_id_2.length == 18 && reg_id.test(str_id_2)){
-            // console.log(str_id_2.length);
-            console.log(reg_id.exec(str_id_2));
-        }
-
+        var str_id_2 = '42101219681104523X'; 
+        console.log(reg_id.exec(str_id_1));
+        console.log(reg_id.exec(str_id_2));
         //4. 匹配用户名正则，4到16位（字母，数字，下划线，减号）
         var reg_username = /^[\w_-]{4,16}$/;
         var str_username_1 = 'Jiangfeng_996';
-        if(!reg_username.test(str_username_1)){
-            console.log(reg_username.test(str_username_1),str_username_1);
-        }
-        var str_username_2 = '@qqxiaobing'
+        console.log('1111_s'.match(reg_username));
     </script>
 </body>
 </html>

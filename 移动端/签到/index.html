@@ -7,15 +7,123 @@
     <title>签到</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
-
-
 </head>
 <body>
+    <!-- header -->
+    <header>
+        <span id="back"></span>
+        <p>我的积分</p>
+        <span id="right">积分规则</span>
+    </header>
+    <!-- 积分背景 -->
+    <div id="background">
+        <p>
+            <span>积分</span>
+            <span>积分明细 &nbsp &nbsp | &nbsp &nbsp兑换记录</span>
+        </p>
+        <span>今日签到可获10积分</span>
+    </div>
+    <!-- 签到面板 -->
+    <div id="panel">
+        <div id="record">
+            <p>
+                <span>已经连续签到<b>7</b>天</span>
+                <span>签到提醒</span>
+                <span id="warning" class="default">
+                        <span id="inner"></span>
+                </span>
+            </p>   
+            <ul id="history">
+                <li>
+                    <p>1天</p>
+                    <span id="special">未签到</span>
+                </li>
+                <li class="done">
+                    <p>2天</p>
+                    <span>+10</span>
+                </li>
+                <li class="active">
+                    <p >3天</p>
+                    <span>+20</span>
+                </li>
+                <li>
+                    <p>4天</p>
+                    <span>+20</span>
+                </li>
+                <li>
+                    <p>5天</p>
+                    <span>+30</span>
+                </li>
+                <li>
+                    <p>6天</p>
+                    <span>+30</span>
+                </li>
+                <li>
+                    <p>7天</p>
+                    <span>+80</span>
+                </li>
+            </ul> 
+        </div>
+        <button>点击签到</button>
+    </div>
 
-
-
-    <script src="./js/rem.js"></script>
-    <script src="./js/touch.js"></script>
+    <!-- 兑换列表 -->
+    <div id="exchange">
+        <p>积分兑好物</p>
+        <div id="today-hot">
+            <img src="./image/红酒.png" alt="红酒图片">
+            <div id="info">
+                <p>Penfolds干红葡萄酒1瓶</p>
+                <p>5600</p>
+                <p>￥350</p>          
+            </div>
+            <button id="exchange_btn" >立即兑换</button>
+        </div>
+        <p>热门兑换</p>
+        <ul class="hot-list">
+            <li>
+                <img src="./image/油果.png" alt="油果">
+                <p class="name">0元换牛油果</p>
+                <p class="score">30</p>
+                <p class="price">￥20</p>
+            </li>
+            <li>
+                <img src="./image/蛋糕.png" alt="蛋糕">
+                <p class="name">5折兑换蛋糕打折券</p>
+                <p class="score">50</p>
+                <p class="price">￥30</p>
+            </li>
+            <li>
+                <img src="./image/面膜.png" alt="面膜">
+                <p class="name">Dr Jart+面膜免费领取</p>
+                <p class="score">200</p>
+                <p class="price">￥145</p>
+            </li>
+        </ul>
+        <ul class="hot-list">
+            <li>
+                <img src="./image/油果.png" alt="油果">
+                <p class="name">0元换牛油果</p>
+                <p class="score">30</p>
+                <p class="price">￥20</p>
+            </li>
+            <li>
+                <img src="./image/蛋糕.png" alt="蛋糕">
+                <p class="name">5折兑换蛋糕打折券</p>
+                <p class="score">50</p>
+                <p class="price">￥30</p>
+            </li>
+            <li>
+                <img src="./image/面膜.png" alt="面膜">
+                <p class="name">Dr Jart+面膜免费领取</p>
+                <p class="score">200</p>
+                <p class="price">￥145</p>
+            </li>
+        </ul>
+    </div>
+    <script src="./js/index.js"></script>
     <script src="./js/zepto.js"></script>
+    <script src="./js/touch.js"></script>
+    <script src="./js/rem.js"></script>
 </body>
 </html>
